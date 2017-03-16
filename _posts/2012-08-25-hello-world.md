@@ -7,7 +7,16 @@ title: 你好，世界
 `hello world 012345678915`
 
 ```
-fffffff
+ int main() {
+     printf()
+     return 
+ }
+```
+
+```
+    int main() {
+
+    }
 ```
 
 
