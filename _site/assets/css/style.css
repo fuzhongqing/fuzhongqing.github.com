@@ -248,26 +248,16 @@ table {
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
-@font-face {
-  font-family: 'TIBch';
-  src: local("Hiragino Sans GB"), local("PingFang SC"), local("Heiti SC"), local("Source Han Sans"), local("Microsoft YaHei UI"), local("Microsoft YaHei");
-  unicode-range: U+2014, U+00B7, U+2026; }
-@font-face {
-  font-family: 'TIBch-t';
-  src: local("PingFang TC"), local("Hiragino Sans GB"), local("Source Han Sans"), local("Microsoft JhengHei UI"), local("Microsoft JhengHei");
-  unicode-range: U+2014, U+00B7, U+2026; }
 body {
-  font-family: Lato, "Classic Grotesque W01", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif; }
+  font-family: Lato, "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
-  font-weight: 700;
   color: #222222;
   letter-spacing: -1px; }
 
 h1 {
-  font-size: 36px;
-  font-weight: 700; }
+  font-size: 36px; }
 
 h2 {
   padding-bottom: 10px;
@@ -345,7 +335,7 @@ pre, code {
   width: 100%;
   color: #222;
   background-color: #fff;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: consolas, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -507,7 +497,6 @@ Full-Width Styles
   background: url(../images/sprite_download.png) no-repeat top right; }
 
 #main_content_wrap {
-  background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111; }
 

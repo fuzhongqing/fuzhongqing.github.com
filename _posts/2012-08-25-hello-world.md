@@ -1,23 +1,11 @@
 ---
-layout: default
+layout: post
 title: 你好，世界
 ---
 
 # hello
 `hello world 012345678915`
 
-```
- int main() {
-     printf()
-     return 
- }
-```
-
-```
-    int main() {
-
-    }
-```
 
 {% highlight ruby %}
 def show
