@@ -9,6 +9,7 @@
  * |\.|._)._)
  * --------------------------------- */
 @import url(/media/fonts/telex-regular.css);
+@import url(/media/css/rouge.css);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
 @import url(//code.cdn.mozilla.net/fonts/fira.css);
 * {
@@ -57,6 +58,10 @@ blockquote, pre code {
   line-height: 1.6;
   display: block;
   overflow: auto; }
+
+pre code {
+  background-color: #080808;
+  padding: 1em; }
 
 code {
   background-color: #f8f8f8;
