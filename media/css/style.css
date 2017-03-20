@@ -169,8 +169,7 @@ article {
       padding: .25em; }
   article .post img {
     max-width: 100%;
-    display: block;
-    margin: .5em auto; }
+    display: block; }
   article .comment {
     margin: 3em 0; }
   article .divider {
