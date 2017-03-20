@@ -7,25 +7,36 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
     
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
+    
     <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
 
   <body>
+    <header>
+        <div id="header">
+          <h1><a title="{{ site.name }}" class="" href="/">{{ site.name }}</a></h1>
+        </div>
+       <nav>
+          {% for nav in site.navigations %}
+          <span><a title="{{ nav.title }}" href="{{ nav.href }}"><i class="{{ nav.class }}"></i></a></span>
+          {% endfor %}
+       </nav>
+    </header>    
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
       </section>
+    </div>
     <!-- footer -->
-		<div class="footer"> 
+    <div class="footer"> 
         <span class="block">Made with &hearts; using <a href="http://jekyllrb.com/">Jekyll</a> &amp; <a href="https://github.com/heiswayi/the-plain" title="Inspired by">Inspired</a> &middot; &lt;/&gt; on <a href="https://github.com/fuzhongqing/fuzhongqing.github.io" title="Hosted on GitHub">GitHub</a></span>
         <br>
         <span class="block">&copy; 2017 Zhongqing Fu</span>
-    </div>
     </div>
   </body>
 </html>
