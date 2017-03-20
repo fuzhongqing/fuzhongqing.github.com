@@ -548,3 +548,13 @@ Small Device Styles
     min-width: 320px;
     max-width: 480px;
     font-size: 11px; } }
+.footer {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #777; }
