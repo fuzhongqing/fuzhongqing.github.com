@@ -10,8 +10,8 @@
  * --------------------------------- */
 
 @import url(/media/fonts/telex-regular.css);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
-@import url(https://code.cdn.mozilla.net/fonts/fira.css);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+@import url(//code.cdn.mozilla.net/fonts/fira.css);
 @import "media-queries";
 
 $font-name: "telexregular";
@@ -30,7 +30,13 @@ $background-color: #f9f9f9;
 }
 
 * { margin: 0; padding: 0; }
-body { font-size: 14px; font-family: #{$font}; color: #555; background-color: $background-color; -webkit-font-smoothing: antialiased; }
+body { 
+  font-family: Lato, "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;  
+  line-height: 1.6em;
+  letter-spacing: .2px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f9f9f9;
+  -webkit-font-smoothing: antialiased; }
 ol, ul { list-style-position: inside; }
 li { padding: .2em 0; }
 hr { width: 4em; border: none; border-top: 1px dashed #d0d0d0; border-bottom: 1px dashed #f9f9f9; }
@@ -84,7 +90,7 @@ ul.listing {
     list-style-type:none;
     padding: 0;
     &.listing-item { a { padding: .2em 0 .2em 2em; } time { color: #999; } &:hover { background-color: #f9f9f9; } }
-    &.listing-seperator { font-family: #{$label-font}; &:before { content: "⭠ "; color: #ccc; } }
+    &.listing-seperator { font-family: #{$label-font}; &:before { content: "<- "; color: #ccc; } }
   }
 }
 
