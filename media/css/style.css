@@ -71,7 +71,8 @@ code {
   font-family: Fira Mono, monospace; }
 
 h1, h2 {
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  font-weight: lighter; }
 
 time {
   font-family: Ubuntu, monospace; }
