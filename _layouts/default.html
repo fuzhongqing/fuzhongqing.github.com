@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html>
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
+    <title>{{ site.name }}</title>
+    {% endif %}
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-    
-    <title>{{ site.title | default: site.github.repository_name }}</title>
+    <link rel="stylesheet" href="/media/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script type="text/javascript"> hljs.initHighlightingOnLoad(); </script>
   </head>
-
   <body>
-    <header>
-        <div id="header">
-          <h1><a title="{{ site.name }}" class="" href="/">{{ site.name }}</a></h1>
-        </div>
-       <nav>
-          {% for nav in site.navigations %}
-          <span><a title="{{ nav.title }}" href="{{ nav.href }}"><i class="{{ nav.class }}"></i></a></span>
-          {% endfor %}
-       </nav>
-    </header>    
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="{{ site.name }}" class="" href="/">{{ site.name }}</a></h1>
+          </div>
+          <nav>
+            {% for nav in site.navigations %}
+            <span><a title="{{ nav.title }}" href="{{ nav.href }}"><i class="{{ nav.class }}"></i></a></span>
+            {% endfor %}
+          </nav>
+        </header>
+        <div id="content">
         {{ content }}
-      </section>
-    </div>
-    <!-- footer -->
-    <div class="footer"> 
-        <span class="block">Made with &hearts; using <a href="http://jekyllrb.com/">Jekyll</a> &amp; <a href="https://github.com/heiswayi/the-plain" title="Inspired by">Inspired</a> &middot; &lt;/&gt; on <a href="https://github.com/fuzhongqing/fuzhongqing.github.io" title="Hosted on GitHub">GitHub</a></span>
-        <br>
-        <span class="block">&copy; 2017 Zhongqing Fu</span>
-    </div>
+        </div>
+        <footer>
+        <!-- footer -->
+        <div class="footer"> 
+          <span class="block">Made with &hearts; using <a href="http://jekyllrb.com/">Jekyll</a> &amp; themed by <a href="http://lhzhang.com" title="sext vi">sext vi</a> &middot; &lt;/&gt; on <a href="https://github.com/fuzhongqing/fuzhongqing.github.io" title="Hosted on GitHub">GitHub</a></span>
+          <br>
+          <span class="block">&copy; 2017 Zhongqing Fu</span>
+        </div>
+        </footer>
+
+      </div> <!-- main -->
   </body>
 </html>

@@ -6,7 +6,14 @@ kramdown:
     css_class: 'highlight'
 highlighter: rouge
 
+permalink: /:year/:month/:day/:title.html
 name: "untitled"
+
+
+
+
+author: "roy.fu"
+atom-baseurl: "https://fuzhongqing.github.io/"
 
 navigations:
   - title: Archive
@@ -21,3 +28,4 @@ navigations:
   - title: Subscribe
     class: fa fa-rss
     href: /atom.xml
+
