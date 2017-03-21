@@ -11,10 +11,11 @@
 @charset "UTF-8";
 
 @import url(/media/fonts/telex-regular.css);
-@import url(/media/css/rouge.css);
+//@import url(/media/css/rouge.css);
 @import url(//fonts.googleapis.com/css?family=Ubuntu:300);
 @import url(//code.cdn.mozilla.net/fonts/fira.css);
 @import "media-queries";
+@import "syntax-highlighting";
 
 $font-name: "telexregular";
 $font: $font-name, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -45,9 +46,8 @@ hr { width: 4em; border: none; border-top: 1px dashed #d0d0d0; border-bottom: 1p
 .center { text-align: center; }
 ::selection { color: #fff; background-color: #333; }
 a { text-decoration: none; color: #bb2222; &:hover { color: #dd1144; }; }
-blockquote { background-color: #f8f8f8; padding: 0 1em; border: 1px dashed #eee !important; border-color: #e0e0e0 !important; font-size: 13px; line-height: 1.6; display: block; overflow: auto; }
-pre code { @extend blockquote;
-background-color: #080808; padding: 1em; }
+blockquote { background-color: #f8f8f8; padding: 0 1em; border: 1px dashed #eee !important; border-color: #e0e0e0 !important; font-size: 14px; line-height: 1.6; display: block; overflow: auto; }
+pre code { @extend blockquote; padding: 1em; }
 code { background-color: #f8f8f8; padding: 2px 5px; border: 1px dashed #e0e0e0; font-family: #{$monospace}; }
 h1, h2 { font-size: 1.4em; font-weight: lighter; }
 time { font-family: #{$time-font} }
