@@ -19,7 +19,7 @@
 
 $font-name: "telexregular";
 $font: $font-name, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-$monospace: Source Code Pro, Courier, Fira Mono, monospace;
+$monospace: "Source Code Pro, Courier", Fira Mono, monospace;
 $label-font: $font-name, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 $time-font: "Ubuntu", monospace;
 $background-color: #f9f9f9;
@@ -46,7 +46,7 @@ hr { width: 4em; border: none; border-top: 1px dashed #d0d0d0; border-bottom: 1p
 .center { text-align: center; }
 ::selection { color: #fff; background-color: #333; }
 a { text-decoration: none; color: #bb2222; &:hover { color: #dd1144; }; }
-blockquote { background-color: #f8f8f8; padding: 0 1em; border: 1px dashed #eee !important; border-color: #e0e0e0 !important; font-size: 14px; line-height: 1.4; display: block; overflow: auto;
+blockquote { background-color: #11101b; padding: 0 1em; border: 1px dashed #eee !important; border-color: #e0e0e0 !important; font-size: 14px; line-height: 1.4; display: block; overflow: auto;
 font-weight: 600; }
 pre code { @extend blockquote; padding: 1em; }
 code { background-color: #f8f8f8; padding: 2px 5px; border: 1px dashed #e0e0e0; font-family: #{$monospace}; }

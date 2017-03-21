@@ -239,7 +239,7 @@ a, header #header h1 a, article .title a, article .meta .tags a, article .divide
     color: #dd1144; }
 
 blockquote, pre code {
-  background-color: #f8f8f8;
+  background-color: #11101b;
   padding: 0 1em;
   border: 1px dashed #eee !important;
   border-color: #e0e0e0 !important;
