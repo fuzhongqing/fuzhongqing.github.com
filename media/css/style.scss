@@ -55,7 +55,6 @@ time { font-family: #{$time-font} }
 header {
   @include page;
   text-align: justify;
-  margin: 3em auto;
   &:after { content: ''; width: 100%; display: inline-block; }
 
   #header {
@@ -78,6 +77,11 @@ header {
     a {
       font-family: #{$label-font}; color: #ccc;
     }
+  }
+}
+@media screen and (min-width: 800px) {
+  header {
+    margin: 3em auto;
   }
 }
 
