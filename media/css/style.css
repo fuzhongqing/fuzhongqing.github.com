@@ -11,6 +11,8 @@
  * --------------------------------- */
 @import url(/media/fonts/telex-regular.css);
 @import url(//fonts.googleapis.com/css?family=Ubuntu:300);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
 @import url(//code.cdn.mozilla.net/fonts/fira.css);
 .highlight table td {
   padding: 5px; }
@@ -206,12 +208,12 @@
   padding: 0; }
 
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
+  font-family: 'Roboto', Helvetica, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
   line-height: 1.6em;
   letter-spacing: .2px;
-  -webkit-font-smoothing: antialiased;
-  background-color: #f9f9f9;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: 300;
+  font-size: 1.1em; }
 
 ol, ul {
   list-style-position: inside; }
@@ -244,7 +246,7 @@ blockquote, pre code {
   border: 1px dashed #eee !important;
   border-color: #e0e0e0 !important;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.4em;
   display: block;
   overflow: auto;
   font-weight: 600; }
@@ -308,8 +310,7 @@ header {
   header {
     margin: 3em auto; } }
 #content {
-  margin: 0 auto;
-  line-height: 2em; }
+  margin: 0 auto; }
   @media screen and (min-width: 320px) {
     #content {
       width: 300px; } }
@@ -345,7 +346,7 @@ ul.listing {
 article {
   margin: 2em 0; }
   article p {
-    padding: .7em 0; }
+    padding: .3em 0; }
   article .title {
     font-family: telexregular, Hiragino Sans GB, Microsoft YaHei, sans-serif; }
     article .title header #header h1 a, header #header h1 article .title a, article .title a, article .title .meta .tags a, article .meta .tags .title a {
@@ -353,8 +354,10 @@ article {
   article .meta {
     display: block;
     overflow: auto;
-    margin-top: -.5em;
-    font-size: .9em; }
+    margin-top: 0.5em;
+    color: #868481;
+    display: block;
+    overflow: auto; }
     article .meta .tags header #header h1 a, header #header h1 article .meta .tags a, article .meta .tags a {
       color: #999999;
       padding: .25em; }
@@ -426,7 +429,7 @@ footer {
 
 .gist {
   font-size: 13px;
-  line-height: 1.6; }
+  line-height: 1.6em; }
 
 .like-wrapper {
   color: #999; }

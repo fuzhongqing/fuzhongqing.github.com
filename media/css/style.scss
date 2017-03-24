@@ -13,13 +13,15 @@
 @import url(/media/fonts/telex-regular.css);
 //@import url(/media/css/rouge.css);
 @import url(//fonts.googleapis.com/css?family=Ubuntu:300);
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import url(//code.cdn.mozilla.net/fonts/fira.css);
 @import "media-queries";
 @import "syntax-highlighting";
 
 $font-name: "telexregular";
 $font: $font-name, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-$monospace: "Source Code Pro, Courier", Fira Mono, monospace;
+$monospace: 'Source Code Pro', "Courier", Fira Mono, monospace;
 $label-font: $font-name, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 $time-font: "Ubuntu", monospace;
 $background-color: #f9f9f9;
@@ -33,20 +35,22 @@ $background-color: #f9f9f9;
 }
 
 * { margin: 0; padding: 0; }
-body { 
-  font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;  
+body {
+  font-family: 'Roboto', Helvetica, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;  
   line-height: 1.6em;
   letter-spacing: .2px;
-  -webkit-font-smoothing: antialiased;
-  background-color: #f9f9f9;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: subpixel-antialiased;
+  //background-color: #f9f9f9; 
+  font-weight: 300;
+  font-size: 1.1em;
+  }
 ol, ul { list-style-position: inside; }
 li { padding: .2em 0; }
 hr { width: 4em; border: none; border-top: 1px dashed #d0d0d0; border-bottom: 1px dashed #f9f9f9; }
 .center { text-align: center; }
 ::selection { color: #fff; background-color: #333; }
 a { text-decoration: none; color: #bb2222; &:hover { color: #dd1144; }; }
-blockquote { background-color: #f5f3e7; padding: 0 1em; border: 1px dashed #eee !important; border-color: #e0e0e0 !important; font-size: 14px; line-height: 1.4; display: block; overflow: auto;
+blockquote { background-color: #f5f3e7; padding: 0 1em; border: 1px dashed #eee !important; border-color: #e0e0e0 !important; font-size: 14px; line-height: 1.4em; display: block; overflow: auto;
 font-weight: 600; }
 pre code { @extend blockquote; background-color: #11101b; padding: 1em; }
 code { background-color: #f8f8f8; padding: 2px 5px; border: 1px dashed #e0e0e0; font-family: #{$monospace}; }
@@ -88,7 +92,6 @@ header {
 
 #content {
   @include page;
-  line-height: 2em;
   .main-listing { margin-bottom: 2em; }
 }
 
@@ -104,7 +107,7 @@ ul.listing {
 
 article {
   margin: 2em 0;
-  p { padding: .7em 0; }
+  p { padding: .3em 0; }
   .title {
     font-family: #{$label-font};
     a { @extend a; color: #777; }
@@ -113,8 +116,10 @@ article {
   .meta {
     display: block;
     overflow: auto;
-    margin-top: -.5em;
-    font-size: .9em;
+    margin-top: 0.5em;
+    color: #868481;
+    display: block;
+    overflow: auto;
     .tags a { @extend a; color: #999999; padding: .25em; }
   }
 
@@ -167,7 +172,7 @@ footer {
 #tag_cloud { margin-bottom: 1em; }
 
 // gist
-.gist { font-size: 13px; line-height:1.6; }
+.gist { font-size: 13px; line-height:1.6em; }
 
 // like
 .like-wrapper {
