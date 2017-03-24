@@ -206,7 +206,7 @@
   padding: 0; }
 
 body {
-  font-family: Lato, "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
   line-height: 1.6em;
   letter-spacing: .2px;
   -webkit-font-smoothing: antialiased;
